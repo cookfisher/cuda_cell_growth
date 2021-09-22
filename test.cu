@@ -1,9 +1,3 @@
-//************************
-// COMP426 Assignment 3
-// Jia Ming Wei #40078192
-// Oct 27
-//*************************
-
 #include <windows.h>
 #include <string>
 #include <iostream>
@@ -1458,44 +1452,3 @@ int main(int argc, char** argv)
 
     return 0;
 }
-
-
-/*
-//======from idle ===
-float xpos = -1;
-float cr, cg, cb; // color
-void idle() {
-	if (xpos <= 1)
-	{
-		cr = 1.0f;
-		cg = 1.0f;
-		cb = 0.0f;
-		xpos += 0.001;
-	}
-	else {
-		xpos = xpos - 2;
-	}
-	glutPostRedisplay();
-}
-
-void display1(void) {
-	glClearColor(0, 0, 0, 0);
-	glClear(GL_COLOR_BUFFER_BIT);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	glPushMatrix();
-	glColor3f(cr, cg, cb);
-	glTranslatef(xpos, 0, 0);
-	glScalef(1.5, 1.9, 3);
-	glutSolidCube(0.2);
-	glPopMatrix();
-	glutSwapBuffers();
-}
-*/
-/*glutInit(&argc, argv);
-	glutInitWindowSize(1024, 768);
-	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
-	glutCreateWindow("Cell Growth Simulator");
-	glutDisplayFunc(display1);
-	glutIdleFunc(idle);
-	glutMainLoop();*/
